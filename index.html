@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Formulários</title>
 </head>
 <body>
-    <h1>Mercado Livre</h1>
-    <a href="index.html">Home |</a>
-    <a href="produtos.html">Produtos |</a>
-    <a href="contato.html">Contato</a>
+    <h1>Formulário</h1>
+    <form action="" method="post"> 
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Ex: Maria" required><br>
 
-    <hr>
+        <label>Sobrenome:</label>
+        <input type="text" name="sobrenome" placeholder="Ex: Silva" required> <br>
 
-    <h2>Página Inicial</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="ajhdsia@hotmail.com" required> <br>
+        <label>Senha</label>
+        <input type="password" name="senha" placeholder="Digite sua senha" required> <br>
+        <label>Turno</label> <br>
+            <input type="radio" name="turno" value="Manhã" required> Manhã <br>
+            <input type="radio" name="turno" value="Tarde" required> Tarde <br>
+            <input type="radio" name="turno" value="Noite" required> Noite <br>
 
-    <figure>
-        <img src="img/notebook.jpg" width="300">
-        <figcaption>Notebook</figcaption>
-    </figure>
+            <label>Curso</label> 
+            <select name="curso" required>
+                <option value="">Selecione um curso</option>
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="adm">Administração</option>
+                <option value="info">Informática</option>
+            </select> <br>
 
-    <figure>
-        <img src="img/celular.avif" width="300">
-        <figcaption>Celular</figcaption>
-    </figure>
-
+        <label>
+            <input type="checkbox" name="termos" required>
+            Aceitos os termos de uso
+        </label> <br>
+        <input type="submit">
+    </form>
 </body>
 </html>
